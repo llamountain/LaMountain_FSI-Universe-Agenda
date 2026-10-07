@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Financial services industry agenda for GitHub Universe 2026: trusted agentic transformation, secure delivery, and peer connections.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>LaMountain_FSI Universe Agenda</title>
+  <link rel="icon" href="data:,">
+  <link rel="canonical" href="https://llamountain.github.io/LaMountain_FSI-Universe-Agenda/">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <div class="eyebrow">GitHub Universe 2026</div>
+      <h1>LaMountain_FSI<br>Universe Agenda</h1>
+      <p class="subtitle">Trusted agentic transformation. A shared journey for financial-services leaders: scale AI, strengthen software security, modernize platforms, and turn innovation into measurable outcomes.</p>
+      <div class="stats">
+        <div><strong>2</strong><span>conference days</span></div>
+        <div><strong id="experience-count">24</strong><span>sessions &amp; shared experiences</span></div>
+        <div><strong>Oct 28-29</strong><span>Fort Mason, San Francisco</span></div>
+      </div>
+    </header>
+    <section class="filters" aria-label="Agenda filters">
+      <div class="toggle-group" aria-label="Agenda day">
+        <button type="button" data-day="all" aria-pressed="true" title="Wednesday and Thursday conference days">Both days</button>
+        <button type="button" data-day="tue" aria-pressed="false">Tuesday</button>
+        <button type="button" data-day="wed" aria-pressed="false">Wednesday</button>
+        <button type="button" data-day="thu" aria-pressed="false">Thursday</button>
+      </div>
+      <input id="query" type="search" aria-label="Filter sessions, social activities, and add-ons" placeholder="Filter sessions, add-ons, or venues...">
+    </section>
+    <p class="results" id="results" role="status">Loading FSI experiences...</p>
+    <section id="schedule" class="schedule" aria-label="FSI conference agenda by day and time"></section>
+    <noscript><p class="empty">Enable JavaScript to display the agenda, filters, and venue map.</p></noscript>
+
+    <section class="evening" id="social-section" aria-labelledby="evening-heading">
+      <div class="section-heading">
+        <div class="eyebrow" id="social-days">Wednesday &amp; Thursday | October 28-29</div>
+        <h2 id="evening-heading">Social activities &amp; networking</h2>
+        <p id="social-description">LPL's after-hours and networking guide, retained in the same card-and-map format, plus the planned FSI closing reception. The FSI evening guide highlights Faros at Radhaus, Xebia, Slalom, Cloudsmith, and Insight. Use the day buttons or search to explore the full list.</p>
+      </div>
+      <div class="callout"><strong>Optional, not booked:</strong> <span id="social-notice">Many activities overlap sessions or each other. Unconfirmed dates, times, venues, and eligibility are stated on each card. Some events require an invitation, host approval, or special credentials.</span></div>
+      <p class="results" id="social-results" role="status">Loading social activities...</p>
+      <div id="social-activities" class="schedule"></div>
+      <div id="mapped-socials">
+        <h3 class="map-heading" id="map-heading">Venue map: Wednesday &amp; Thursday</h3>
+        <p class="map-note">All listed activities are represented below, grouped by venue. Blue pins indicate published event venues; amber pins are provisional locations or approximate campus/pier references, not confirmed destinations. Activities without a defensible location are listed separately, without invented pins. Day and search filters apply to both the map and venue list. Shared venues use one pin; use "Show on map" to inspect nearby pins individually.</p>
+        <p class="results" id="map-results" role="status"></p>
+        <div class="map-and-venues" id="venue-map-layout">
+          <div id="venue-map" role="region" aria-label="Map of social and add-on venues"></div>
+          <div id="venues" class="venues" role="region" aria-label="Mapped venues and activities; scroll for all locations" tabindex="0"></div>
+        </div>
+        <div id="unmapped-socials">
+          <h3 class="map-heading">Awaiting an exact venue</h3>
+          <p class="map-note">These activities remain part of your agenda. Confirm the location with the organizer before making travel plans.</p>
+          <div id="unmapped-venues" class="venues"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p><strong>Planning:</strong> Times are PDT (UTC-7). Each day is organized by time, your experience, why it matters for FSI, and location. The three interest-specific sessions from the document are included in the same timeline and overlap the shared journey; choose between concurrent activities. “Morning” and “Afternoon” retain the source's placement, not a confirmed start time. Hosted meeting points, the opening and closing programs, and the planned FSI reception require organizer or event-app confirmation. Allow time for queues, early arrival, and accessible travel between buildings.</p>
+      <p><strong>Source:</strong> Universe-FSI-Cohort-Itinerary.v2.docx, retrieved October 7, 2026. The document bases schedules on September 15 itineraries and a September 16 sponsored-event list. Wednesday and Thursday preserve its shared-journey times, descriptions, and locations; the three additional session descriptions are FSI editorial summaries. Missing end times and rooms remain explicitly unspecified. Linked catalog entries come from the existing itinerary resources and are not a fresh schedule verification. Times, rooms, capacity, and availability may change.</p>
+      <p><strong>Tuesday and networking:</strong> Tuesday's welcome reception and by-arrangement briefings are unchanged from LPL. The retained social guide and venue references reflect the September 21-22 research, not new October confirmation; earlier uncertainty and access restrictions remain on the cards. Some social activities overlap the FSI journey. Figma's Thursday date remains unconfirmed. Map pins are venue references, not reservations or confirmation of event locations. No invitations, registrations, or seats are confirmed.</p>
+      <p>Prepared for financial-services attendees by <strong>Lisa LaMountain, Account Executive, GitHub</strong>. Updated October 7, 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
